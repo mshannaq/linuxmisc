@@ -1,0 +1,6 @@
+#Change wordpress users password and keep copy of the old hashed password in passtmp file for future use
+function wpass() {
+	wget https://raw.githubusercontent.com/mshannaq/linuxmisc/master/worpdress/wpass.php;
+	php wpass.php
+	rm -f wpass.php;
+}
