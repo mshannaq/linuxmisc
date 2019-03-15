@@ -10,7 +10,7 @@ if [ "$EUID" -ne 0 ]
 fi
 
 #check if this is a cpanel server and users folder already exists
-if [ ! -d /var/cpanel/userss/ ] 
+if [ ! -d /var/cpanel/users/ ] 
   then echo "Are you sure this is a Cpanel server?! becuase /var/cpanel/users/ is not a valid folder"
   exit 1
 fi
