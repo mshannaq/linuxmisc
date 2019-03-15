@@ -4,3 +4,10 @@ function wpass() {
 	php wpass.php
 	rm -f wpass.php;
 }
+
+#getting a list of email accounts that exists on this cpanel server
+function getemailacts() {
+       wget https://raw.githubusercontent.com/mshannaq/linuxmisc/master/cpanel/emailacts_on_this_cpanelserver.sh
+       bash emailacts_on_this_cpanelserver.sh
+       rm -f emailacts_on_this_cpanelserver.sh
+}
